@@ -1,0 +1,196 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Courier New", Courier, monospace;
+
+  background-image: linear-gradient(to right bottom, #ff3366, #ba265d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.App {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  font-size: 3rem;
+  padding: 3rem 0;
+    color: #fff;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  grid-gap: 5rem;
+}
+
+.logo::after,
+.logo::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  line-height: 1;
+  display: block;
+  position: relative;
+  background-color: black;
+  display: flex;
+}
+
+.form {
+  padding: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+}
+
+.form-select {
+  padding: 1.3rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.form-input {
+  padding: 1.3rem;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  border: 1px solid;
+  margin-right: 2rem;
+  width: 13%;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.form-input:focus {
+  width: 15%;
+}
+
+.form-input:hover {
+  width: 15%;
+}
+.form-btn {
+  padding: 1.3rem 2.3rem;
+  background: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  border: 1px solid;
+  transition: all 0.3s;
+}
+
+
+
+.form-btn:active {
+  transform: translateY(3px);
+}
+
+.form-btn:hover {
+  background-color: rgb(234, 233, 233);
+  transform: translateY(3px);
+}
+
+.list {
+  padding: 3rem;
+  min-height: 60vh;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.list-item {
+  flex: 0 0 14.5%;
+  padding: 2rem;
+  background: #a11b4c;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.list-item:active {
+  transform: translateY(3px);
+}
+.list-item:hover {
+  background: #ba265d;
+}
+
+.btn-delete {
+  width: 20%;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: none;
+  background: none;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.btn-delete:hover {
+  background: #fff;
+  width: 23%;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto;
+  border-top: 3px solid black;
+}
+
+.actions-input {
+  padding: 1.3rem 4rem;
+  border-radius: 0.8rem;
+  margin-right: 1.2rem;
+  font-size: 1.5rem;
+  outline: none;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.actions-input:hover {
+  padding: 1.3rem 6rem;
+}
+
+.actions-btn {
+  padding: 1.3rem 2rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.actions-btn:hover {
+  background-color: rgb(240, 228, 228);
+  transform: translateY(3px);
+}
+
+.footer,
+.stats {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1.3rem;
+  color: #fff;
+}
